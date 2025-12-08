@@ -4,8 +4,8 @@
 window.onload = function() {
     // The answers to the quiz
     var answers = {
-        q1: "b",  // Tim Berners-Lee
-        q2: "b",  // 1989
+        q1: "b",  // Encrypting data automatically
+        q2: "b",  // A user visting a domain different from the website
         q3: "b",  // Hyper Text Markup Language
         q4: "CERN",  // Fill in the blank
         q5: ["a", "b", "d"]  // CSS, JavaScript, HTTP

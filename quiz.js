@@ -4,11 +4,11 @@
 window.onload = function() {
     // The answers to the quiz
     var answers = {
-        q1: "c",  // Encrypting data automatically
-        q2: "b",  // A user visiting a domain different from the website
-        q3: "b",  // They allow hackers to monitor users activity across multiple sites
-        q4: "SESSION STATE",  // Fill in the blank
-        q5: ["a", "b", "d"]  // Secure flag, HttpOnly flag, SameSite attribute
+        q1: "b",  // Tim Berners-Lee
+        q2: "b",  // 1989
+        q3: "b",  // Hyper Text Markup Language
+        q4: "CERN",  // Fill in the blank
+        q5: ["a", "b", "d"]  // CSS, JavaScript, HTTP
     };
     
     // Get elements from the page
@@ -30,11 +30,11 @@ window.onload = function() {
         if (q1Answer && q1Answer.value === answers.q1) {
             score++;
             results += '<div class="correct"><p><strong>Question 1:</strong> Correct!</p>';
-            results += '<p>Your answer: Encrypting data automatically</p></div>';
+            results += '<p>Your answer: Tim Berners-Lee</p></div>';
         } else {
             results += '<div class="incorrect"><p><strong>Question 1:</strong> Incorrect</p>';
             results += '<p>Your answer: ' + (q1Answer ? q1Answer.parentNode.textContent.trim() : "No answer") + '</p>';
-            results += '<p>Correct answer: Encrypting data automatically</p></div>';
+            results += '<p>Correct answer: Tim Berners-Lee</p></div>';
         }
         
         // Question 2 (Radio)
@@ -42,11 +42,11 @@ window.onload = function() {
         if (q2Answer && q2Answer.value === answers.q2) {
             score++;
             results += '<div class="correct"><p><strong>Question 2:</strong> Correct!</p>';
-            results += '<p>Your answer: A user visiting a domain different from the website</p></div>';
+            results += '<p>Your answer: 1989</p></div>';
         } else {
             results += '<div class="incorrect"><p><strong>Question 2:</strong> Incorrect</p>';
             results += '<p>Your answer: ' + (q2Answer ? q2Answer.parentNode.textContent.trim() : "No answer") + '</p>';
-            results += '<p>Correct answer: A user visiting a domain different from the website</p></div>';
+            results += '<p>Correct answer: 1989</p></div>';
         }
         
         // Question 3 (Radio)
@@ -54,11 +54,11 @@ window.onload = function() {
         if (q3Answer && q3Answer.value === answers.q3) {
             score++;
             results += '<div class="correct"><p><strong>Question 3:</strong> Correct!</p>';
-            results += '<p>Your answer: They allow hackers to monitor users activity across multiple sites</p></div>';
+            results += '<p>Your answer: Hyper Text Markup Language</p></div>';
         } else {
             results += '<div class="incorrect"><p><strong>Question 3:</strong> Incorrect</p>';
             results += '<p>Your answer: ' + (q3Answer ? q3Answer.parentNode.textContent.trim() : "No answer") + '</p>';
-            results += '<p>Correct answer: They allow hackers to monitor users activity across multiple sites</p></div>';
+            results += '<p>Correct answer: Hyper Text Markup Language</p></div>';
         }
         
         // Question 4 (Write your answer in empty box)
@@ -70,7 +70,7 @@ window.onload = function() {
         } else {
             results += '<div class="incorrect"><p><strong>Question 4:</strong> Incorrect</p>';
             results += '<p>Your answer: ' + (q4Answer || "No answer") + '</p>';
-            results += '<p>Correct answer: Session State</p></div>';
+            results += '<p>Correct answer: CERN</p></div>';
         }
         
         // Question 5 (Checkboxes)
@@ -106,7 +106,7 @@ window.onload = function() {
         if (allCorrectSelected && noIncorrectSelected) {
             score++;
             results += '<div class="correct"><p><strong>Question 5:</strong> Correct!</p>';
-            results += '<p>Your answer: Secure flag, HttpOnly flag, SameSite attribute</p></div>';
+            results += '<p>Your answer: CSS, JavaScript, HTTP</p></div>';
         } else {
             results += '<div class="incorrect"><p><strong>Question 5:</strong> Incorrect</p>';
             
@@ -117,7 +117,7 @@ window.onload = function() {
             }
             
             results += '<p>Your answer: ' + (selectedText.length > 0 ? selectedText.join(", ") : "No answer") + '</p>';
-            results += '<p>Correct answer: Secure flag, HttpOnly flag, SameSite attribute</p></div>';
+            results += '<p>Correct answer: CSS, JavaScript, HTTP</p></div>';
         }
         
         // Calculate percentage over 5 questions

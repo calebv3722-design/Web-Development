@@ -42,11 +42,11 @@ window.onload = function() {
         if (q2Answer && q2Answer.value === answers.q2) {
             score++;
             results += '<div class="correct"><p><strong>Question 2:</strong> Correct!</p>';
-            results += '<p>Your answer: 1989</p></div>';
+            results += '<p>Your answer: A user visting a domain different from the website</p></div>';
         } else {
             results += '<div class="incorrect"><p><strong>Question 2:</strong> Incorrect</p>';
             results += '<p>Your answer: ' + (q2Answer ? q2Answer.parentNode.textContent.trim() : "No answer") + '</p>';
-            results += '<p>Correct answer: 1989</p></div>';
+            results += '<p>Correct answer: A user visting a domain different from the website</p></div>';
         }
         
         // Question 3 (Radio)

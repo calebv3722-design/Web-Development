@@ -6,9 +6,9 @@ window.onload = function() {
     var answers = {
         q1: "b",  // Encrypting data automatically
         q2: "b",  // A user visting a domain different from the website
-        q3: "b",  // Hyper Text Markup Language
-        q4: "CERN",  // Fill in the blank
-        q5: ["a", "b", "d"]  // CSS, JavaScript, HTTP
+        q3: "b",  // They allow hackers to monitor user activity across multiple sites
+        q4: "Session State",  // Fill in the blank
+        q5: ["a", "b", "d"]  // Secure flag, HttpOnly flag, and SameSite attributes
     };
     
     // Get elements from the page

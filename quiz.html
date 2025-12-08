@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Topic1.html">Topic 1</a></li>
+            <li><a href="Topic2.html">Topic 2</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+      <div class="content">
+        <h1>Test Your Knowledge</h1>
+
+        <div class="quiz-container">
+            <form id="quiz-form">
+                
+                <div class="quiz-question">
+                    <h3>1. Which of the following is NOT a common use of cookies?</h3>
+                    <div class="quiz-options">
+                        <label class="option-label">
+                            <input type="radio" name="q1" value="a"> Remembering login sessions
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q1" value="b"> Tracking user behavior for analytics
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q1" value="c"> Encrypting data automatically
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q1" value="d"> Saving website preferences
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 2: Radio -->
+                <div class="quiz-question">
+                    <h3>2. A third-party cookie is created by?</h3>
+                    <div class="quiz-options">
+                        <label class="option-label">
+                            <input type="radio" name="q2" value="a"> A user directly visiting the website's domain
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q2" value="b"> A user visiting a domain different from the website 
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q2" value="c"> A user's browser without a website request
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q2" value="d"> A user's operating system
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 3: Radio -->
+                <div class="quiz-question">
+                    <h3>3. What is the main privacy concern with tracking cookies??</h3>
+                    <div class="quiz-options">
+                        <label class="option-label">
+                            <input type="radio" name="q3" value="a"> They increase website loading speed
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q3" value="b"> They allow hackers to monitor users activity across multiple sites
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q3" value="c"> They import harmful temporary files
+                        </label>
+                        <label class="option-label">
+                            <input type="radio" name="q3" value="d"> They block ads by default
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 4: Write inside the blank -->
+                <div class="quiz-question">
+                    <h3>4. A cookie is a small piece of data stored in the user’s browser that is primarily used to maintain _________ across website visits.</h3>
+                    <input type="text" name="q4" class="fill-blank-input" placeholder="Type your answer here">
+                </div>
+
+                <!-- Question 5: Multiple selection -->
+                <div class="quiz-question">
+                    <h3>5. Which of the following strategies are possible improvements upon cookie privacy and security? (Select all that apply)</h3>
+                    <div class="quiz-options">
+                        <label class="option-label">
+                            <input type="checkbox" name="q5" value="a"> Using Secure flag so cookies are only sent over HTTPS
+                        </label>
+                        <label class="option-label">
+                            <input type="checkbox" name="q5" value="b"> Using the HttpOnly flag to prevent JavaScript access
+                        </label>
+                        <label class="option-label">
+                            <input type="checkbox" name="q5" value="c"> Storing sensitive passwords directly inside cookies
+                        </label>
+                        <label class="option-label">
+                            <input type="checkbox" name="q5" value="d"> Using the SameSite attribute to restrict cross-site tracking
+                        </label>
+                    </div>
+                </div>
+
+                <button type="button" id="submit-quiz" class="quiz-btn">Submit Quiz</button>
+                <button type="button" id="restart-quiz" class="quiz-btn" style="display: none;">Restart Quiz</button>
+            </form>
+
+            <!-- Results -->
+            <div id="results-container" class="results-container">
+                <h3>Quiz Results</h3>
+                <div id="score-display"></div>
+                <div id="detailed-results"></div>
+                <div id="pass-fail"></div>
+            </div>
+        </div>
+    </div>
+    </main>
+</body>
+</html>

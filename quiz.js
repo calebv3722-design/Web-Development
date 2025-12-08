@@ -30,11 +30,11 @@ window.onload = function() {
         if (q1Answer && q1Answer.value === answers.q1) {
             score++;
             results += '<div class="correct"><p><strong>Question 1:</strong> Correct!</p>';
-            results += '<p>Your answer: Tim Berners-Lee</p></div>';
+            results += '<p>Your answer: Encrypting data automatically</p></div>';
         } else {
             results += '<div class="incorrect"><p><strong>Question 1:</strong> Incorrect</p>';
             results += '<p>Your answer: ' + (q1Answer ? q1Answer.parentNode.textContent.trim() : "No answer") + '</p>';
-            results += '<p>Correct answer: Tim Berners-Lee</p></div>';
+            results += '<p>Correct answer: Encrypting data automatically</p></div>';
         }
         
         // Question 2 (Radio)

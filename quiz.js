@@ -4,7 +4,7 @@
 window.onload = function() {
     // The answers to the quiz
     var answers = {
-        q1: "b",  // Encrypting data automatically
+        q1: "c",  // Encrypting data automatically
         q2: "b",  // A user visting a domain different from the website
         q3: "b",  // They allow hackers to monitor user activity across multiple sites
         q4: "Session State",  // Fill in the blank

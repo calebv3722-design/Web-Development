@@ -62,7 +62,7 @@ window.onload = function() {
         }
         
         // Question 4 (Write your answer in empty box)
-        var q4Answer = document.querySelector('input[name="q4"]').value.trim().toUpperCase();
+        var q4Answer = document.querySelector('input[name="q4"]').value.trim();
         if (q4Answer === answers.q4) {
             score++;
             results += '<div class="correct"><p><strong>Question 4:</strong> Correct!</p>';

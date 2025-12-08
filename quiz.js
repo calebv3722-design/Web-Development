@@ -54,11 +54,11 @@ window.onload = function() {
         if (q3Answer && q3Answer.value === answers.q3) {
             score++;
             results += '<div class="correct"><p><strong>Question 3:</strong> Correct!</p>';
-            results += '<p>Your answer: Hyper Text Markup Language</p></div>';
+            results += '<p>Your answer: They allow hackers to monitor user activity across multiple sites</p></div>';
         } else {
             results += '<div class="incorrect"><p><strong>Question 3:</strong> Incorrect</p>';
             results += '<p>Your answer: ' + (q3Answer ? q3Answer.parentNode.textContent.trim() : "No answer") + '</p>';
-            results += '<p>Correct answer: Hyper Text Markup Language</p></div>';
+            results += '<p>Correct answer: They allow hackers to monitor user activity across multiple sites</p></div>';
         }
         
         // Question 4 (Write your answer in empty box)
@@ -70,7 +70,7 @@ window.onload = function() {
         } else {
             results += '<div class="incorrect"><p><strong>Question 4:</strong> Incorrect</p>';
             results += '<p>Your answer: ' + (q4Answer || "No answer") + '</p>';
-            results += '<p>Correct answer: CERN</p></div>';
+            results += '<p>Correct answer: Session State</p></div>';
         }
         
         // Question 5 (Checkboxes)
@@ -106,7 +106,7 @@ window.onload = function() {
         if (allCorrectSelected && noIncorrectSelected) {
             score++;
             results += '<div class="correct"><p><strong>Question 5:</strong> Correct!</p>';
-            results += '<p>Your answer: CSS, JavaScript, HTTP</p></div>';
+            results += '<p>Your answer: Secure flag, HttpOnly flag, SameSite attributes</p></div>';
         } else {
             results += '<div class="incorrect"><p><strong>Question 5:</strong> Incorrect</p>';
             
@@ -117,7 +117,7 @@ window.onload = function() {
             }
             
             results += '<p>Your answer: ' + (selectedText.length > 0 ? selectedText.join(", ") : "No answer") + '</p>';
-            results += '<p>Correct answer: CSS, JavaScript, HTTP</p></div>';
+            results += '<p>Correct answer: Secure flag, HttpOnly flag, and SameSite attributes</p></div>';
         }
         
         // Calculate percentage over 5 questions

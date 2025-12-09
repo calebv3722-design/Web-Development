@@ -168,3 +168,21 @@ footer {
     padding: 20px;
     margin-top: 50px;
 }
+/* Content area */
+.content {
+    padding: 20px;
+    text-align: left;
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* SECTIONS */
+.section {
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}

@@ -167,24 +167,3 @@ footer {
     padding: 20px;
     margin-top: 50px;
 }
-@media screen and (min-width: 1200px) {
-    .content {
-        width: 80%;
-        max-width: 1200px;
-    }
-    
-    h1 {
-        font-size: 2.8rem;
-    }
-    
-    h2 {
-        font-size: 2rem;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .content {
-        width: 90%;
-    }
-    
-    h1 {
-        font-size: 2.2rem;
-    }

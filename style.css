@@ -185,10 +185,12 @@ footer {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-.image1 {
-    absolute: left;
-}
-.image2 {
-    float: right;
+/* MAIN IMAGE */
+.main-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }

@@ -229,7 +229,6 @@ footer {
   color: #222;
 }
 
-/* Mobile nav: stack vertically */
 @media (max-width: 768px) {
   .nav-list {
     flex-direction: column;

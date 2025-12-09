@@ -188,5 +188,5 @@ footer {
 }
 /* MAIN IMAGE */
 .image1 {
-    float: left;
+    absolute; left: 0;
 }

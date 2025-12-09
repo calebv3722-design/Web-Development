@@ -176,7 +176,7 @@ tr:nth-child(even) {
 }
 /* FOOTER */
 footer {
-    color: white;
+    color: hsl(0, 0%, 25%);
     text-align: center;
     padding: 20px;
     margin-top: 50px;

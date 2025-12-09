@@ -197,3 +197,6 @@ footer {
 .image1 {
     float: right;
 }
+ {
+  border-radius: 50%;
+}
